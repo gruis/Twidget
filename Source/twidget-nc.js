@@ -12,7 +12,7 @@ requires:
     - more:1.2.4.2/Date.Extras, Request.JSONP
 
 provides: 
-    - Twidget
+   - Twidget
 
 
 usage:
