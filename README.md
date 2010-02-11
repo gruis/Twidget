@@ -89,4 +89,4 @@ Known Issues
 
 Demo
 -----
-http://www.simulacre.org/twidget
+[6 widgets on one page](http://www.simulacre.org/twidget)
