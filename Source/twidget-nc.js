@@ -1,24 +1,18 @@
 /*
 ---
-script: Twidget.js
-
 description: Retrieve recent tweets, parse links, mark them up then place them in an element on the page.
-
-license: 
-    - MIT-style license
-
-
+ 
+license: MIT-style
+ 
+authors:
+- Caleb Crane
+ 
 requires:
-    - more:1.2.4.2/Date.Extras, Request.JSONP
-
-provides: 
-   - Twidget
-
-
-usage:
-    window.addEvent("domready", function(){
-        new Twitdget();
-    });
+  more/1.2.4: 'Date.Extras, Request.JSONP'
+ 
+provides:
+  - Twidget
+ 
 ...
 */
 var Twidget = new Class({
