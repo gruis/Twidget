@@ -1,6 +1,6 @@
 /*
 ---
-description: Retrieve recent tweets, parse links, mark them up then place them in an element on the page.
+description: Retrieve recent tweets from Twitter, parse links, mark them up then place them in an element on the page.
  
 license: MIT-style
  
