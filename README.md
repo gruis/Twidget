@@ -1,7 +1,6 @@
 Twidget
 ==================
-
-Twidget retrieves recent tweets from any user's public timeline, marks them up and puts them into a container element.
+Twidget retrieves recent tweets from any user's public Twitter timeline, parse links, mark them up then place them in an element on the page.
 
 ![Screenshot](http://c5.simulacre.org/images/twidget/banner_200x100.png)
 
@@ -12,6 +11,9 @@ How to use
 1. Reference the Twidget module in your html page
 
             <script type="text/javascript" charset="utf-8" src="js/Twidget.js"></script>
+
+2. Put an element into your HTML to hold/display the tweets
+            <div id="tweets"></div>
 
 2. Instantiate a Twidget object once the domready event has been fired:
         

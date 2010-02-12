@@ -1,6 +1,6 @@
 /*
 ---
-description: Retrieve recent tweets from Twitter, parse links, mark them up then place them in an element on the page.
+description: Retrieve recent tweets from any user's public Twitter timeline, parse links, mark them up then place them in an element on the page.
  
 license: MIT-style
  
@@ -8,7 +8,8 @@ authors:
 - Caleb Crane
  
 requires:
-  more/1.2.4: 'Date.Extras, Request.JSONP'
+- core/1.2.4
+- more/1.2.4: 'Date.Extras, Request.JSONP'
  
 provides:
   - Twidget
@@ -68,8 +69,6 @@ var Twidget = new Class({
     markup: function(tweet,when){
             return '<p class="tweet">' + tweet.replace("\n","<br />") + ' <span class="when">'+ when +'</span></p>';
     },
-    
-    // include a permalink to the tweet? http://twitter.com/calebcrane/status/8907053176
     linkify: function(txt){
             return txt.replace(/(https?:\/\/\S+)/gi,"<a href=\"$1\">$1</a> ").replace(/(^|\s|\(|\[)@(\w+)/g,'$1<a href="http://twitter.com/$2">@$2</a>').replace(/(^|\s)#(\S+)/g,'$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
     },
