@@ -68,13 +68,14 @@ var Twidget = new Class({
     markup: function(tweet,when){
             return '<p class="tweet">' + tweet.replace("\n","<br />") + ' <span class="when">'+ when +'</span></p>';
     },
+    
+    // include a permalink to the tweet? http://twitter.com/calebcrane/status/8907053176
     linkify: function(txt){
-            return txt.replace(/(https?:\/\/\S+)/gi,"<a href=\"$1\">$1</a> ").replace(/(^|\s|\(|\[])@(\w+)/g,'$1<a href="http://twitter.com/$2">@$2</a>').replace(/(^|\s)#(\S+)/g,'$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
+            return txt.replace(/(https?:\/\/\S+)/gi,"<a href=\"$1\">$1</a> ").replace(/(^|\s|\(|\[)@(\w+)/g,'$1<a href="http://twitter.com/$2">@$2</a>').replace(/(^|\s)#(\S+)/g,'$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
     },
     showTweets: function(tweets){
-		var my = this;
-		(function(){ $(my).set("html",tweets); }).delay(500);        
+		$(this).set("html",tweets);
 		
-		return my;
+		return this;
     }
 });
