@@ -1,6 +1,6 @@
 Twidget
 ==================
-Twidget retrieves recent tweets from any user's public Twitter timeline, parse links, mark them up then place them in an element on the page.
+Twidget retrieves recent tweets from any user's public Twitter timeline, parses links, marks them up then placse them in an element on the page.
 
 ![Screenshot](http://c5.simulacre.org/images/twidget/banner_200x100.png)
 
