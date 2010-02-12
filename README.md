@@ -13,9 +13,10 @@ How to use
             <script type="text/javascript" charset="utf-8" src="js/Twidget.js"></script>
 
 2. Put an element into your HTML to hold/display the tweets
+
             <div id="tweets"></div>
 
-2. Instantiate a Twidget object once the domready event has been fired:
+3. Instantiate a Twidget object once the domready event has been fired:
         
             window.addEvent("domready", function(){
                 new Twidget({ user: "mootools", count : "5" }); 
