@@ -6,6 +6,7 @@ license: MIT-style
  
 authors:
 - Caleb Crane
+- Kevin Chapelier
  
 requires:
 - core/1.2.4
