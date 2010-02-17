@@ -2,6 +2,6 @@ name: Twidget
 author: simulacre
 category: Widgets
 tags: [twitter, widget, tweets]
-current: 0.9.5
+current: 0.9.8
 docs: http://simulacre.org/twidget
 demo: http://simulacre.org/twidget
