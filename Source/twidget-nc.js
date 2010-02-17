@@ -70,7 +70,7 @@ var Twidget = new Class({
             return '<p class="tweet">' + tweet.replace("\n","<br />") + ' <span class="when">'+ when +'</span></p>';
     },
     linkify: function(txt){
-            return txt.replace(/(https?:\/\/\S+)/gi,"<a href=\"$1\">$1</a> ").replace(/(^|\s|\(|\[)@(\w+)/g,'$1<a href="http://twitter.com/$2">@$2</a>').replace(/(^|\s)#(\S+)/g,'$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
+            return txt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/(https?:\/\/\S+)/gi,"<a href=\"$1\">$1</a> ").replace(/(^|\s|\(|\[)@(\w+)/g,'$1<a href="http://twitter.com/$2">@$2</a>').replace(/(^|\s)#(\S+)/g,'$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
     },
     showTweets: function(tweets){
 		$(this).set("html",tweets);
