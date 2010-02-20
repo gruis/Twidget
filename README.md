@@ -88,7 +88,7 @@ Known Issues
 -----
 
 * [Retweets not included](http://apiwiki.twitter.com/Twitter-REST-API-Method:-statuses-user_timeline?SearchFor=user_timeline&sp=1)
-* Prior to version 0.9.8 Cross site scripting related characters (&lt;, &gt;, &amp;) were not properly escaped before being inserted in the page. Please update to a version that is at least equal to 0.9.8. - contributed by [Kevin Chapelier](http://github.com/DEEO)
+* Prior to version 0.9.8 Cross site scripting related characters (&lt;, &gt;, &amp;) were not properly escaped before being inserted in the page. Please update to a version that is at least equal to 0.9.8. - contributed by [Kevin Chapelier](http://mootools.net/forge/profile/DEEO)
 
 
 Demo
